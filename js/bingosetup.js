@@ -20,7 +20,7 @@ function newbingo() {
 
   switch (conferenceName) {
     case "Beatsaber":
-      $('#FreeSpace').attr('src',"./images/dergscream.gif"); // Change to a more suitable image later
+      $('#FreeSpace').attr('src',"./images/dergsaber.png");
       break;
     default:
       $('#FreeSpace').attr('src',"./images/dergflop.gif");
