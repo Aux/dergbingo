@@ -1,14 +1,33 @@
 var bingoListBeatsaber;
-var q, w, e, r, t
+var sTiles, eTiles;
 
 function Beatsaber() {
 
-    q = _.sample(['beatsaber q 1','beatsaber q 2','beatsaber q 3','beatsaber q 4','beatsaber q 5'], 5);
-    w = _.sample(['beatsaber w 1','beatsaber w 2','beatsaber w 3','beatsaber w 4','beatsaber w 5'], 5);
-    e = _.sample(['beatsaber e 1','beatsaber e 2','beatsaber e 3','beatsaber e 4','beatsaber e 5'], 5);
-    r = _.sample(['beatsaber r 1','beatsaber r 2','beatsaber r 3','beatsaber r 4','beatsaber r 5'], 5);
-    t = _.sample(['beatsaber t 1','beatsaber t 2','beatsaber t 3','beatsaber t 4','beatsaber t 5'], 5);
+    sTiles = [
+        'bs s 1',
+        'bs s 2',
+        'bs s 3',
+        'bs s 4',
+        'bs s 5',
+        'bs s 6',
+        'bs s 7',
+        'bs s 8',
+        'bs s 9',
+        'bs s 10'
+    ]
+    eTiles = [
+        'bs e 1',
+        'bs e 2',
+        'bs e 3',
+        'bs e 4',
+        'bs e 5',
+        'bs e 6',
+        'bs e 7',
+        'bs e 8',
+        'bs e 9',
+        'bs e 10'
+    ]
 
-    bingoListBeatsaber = [...q, ...w, ...e, ...r, ...t];
+    bingoListBeatsaber = [..._.sample(sTiles, 10), ..._.sample(eTiles, 10)];
     console.log('bingoListBeatsaber = ' + bingoListBeatsaber);
 }
